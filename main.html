@@ -3,38 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cruise Port Destination</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
-    <h1>AppName</h1>
-    <h2>Top Ports</h2>
-    <ol>
-        <li>Miami</li>
-        <li>Barcelona</li>
-        <li>Hong Kong</li>
-        <li>Nice</li>
-        <li>Southampton</li>
-        <li>St Marteen</li>
-        <li>Belize City</li>
-    </ol>
-    <h2>Destinations</h2>
-    <ol>
-        <li>Carribean</li>
-        <li>North America</li>
-        <li>Asia</li>
-        <li>South America</li>
-        <li>Mediterranean</li>
-    </ol>
-<footer>
-    <nav>
+    <header>
+        <nav  class="navbar navbar-light bg-light">
+          <h2>AppName</h2>
+            </nav>
+    </header>
+    <main>
+        <h3>Top Ports</h3>
+        <!-- <ol>
+            <li>Miami</li>
+            <li>Barcelona</li>
+            <li>Hong Kong</li>
+            <li>Nice</li>
+            <li>Southampton</li>
+            <li>St Marteen</li>
+            <li>Belize City</li>
+        </ol> -->
+        <div class="carousel"
+   data-flickity='{"lazyLoad": 4, "cellAlign": "left", "prevNextButtons": false, "pageDots": false}'>
+    <a href="ports.html">
+   <div class="carousel-cell">
+    <img class="carousel-cell-image"
+    data-flickity-lazyload="images/bchurch.jpg" alt="tulip" />
+    <!-- data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg" alt="tulip" /> -->
+ <div class="bottom-left">Barcelona</div> 
+</div>
+</a>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+    data-flickity-lazyload="images/miami.jpg" alt="grapes" />
+      <!-- data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/grapes.jpg" alt="grapes" /> -->
+      <div class="bottom-left">Miami</div>
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/raspberries.jpg" alt="raspberries" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/wolf.jpg" alt="wolf" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/shore.jpg" alt="sea" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/leaf-droplets.jpg" alt="leaf droplets" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/gulls.jpg" alt="gulls" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/touch-screen.jpg" alt="touch screen" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/van.jpg" alt="van" />
+  </div>
+</div>
+        <h2>Destinations</h2>
+        <ol>
+            <li>Carribean</li>
+            <li>North America</li>
+            <li>Asia</li>
+            <li>South America</li>
+            <li>Mediterranean</li>
+        </ol>
+    </main>
+    <footer>
+      <nav>
         <ul>
             <li>Places</li>
             <li>Near Me</li>
             <li>Tours</li>
             <li>Me</li>
         </ul>
-    </nav>
-</footer> 
-
+     </nav>
+    </footer> 
 </body>
 </html>
